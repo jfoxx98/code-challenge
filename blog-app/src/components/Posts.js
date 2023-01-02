@@ -7,36 +7,41 @@ function Posts() {
 
     const API = 'http://localhost:3001/rest/blogposts';
 
-    function getPosts() {
+    function fetchPosts() {
         fetch(API)
         .then((res) => res.json())
         .then((res) => {
-          console.log(res)
           getAllPosts(res)
         })
     }
     
     useEffect(() => {
-      getPosts()
+      fetchPosts()
     }, [])
 
     const posts = allPosts.map((post, id) => {
+
+            const extractedDate = post.created.substring(0, 10);
+            const dateArray = extractedDate.split('-');
+            const formattedDate = dateArray[2] + '.' + dateArray[1] + '.' + dateArray[0]
+
         return(
-            <div class="post" key={id}>
-                <h3 class="post--title" >- {post.title} -</h3>
-                <h4 class="post--subtitle" >{post.subtitle}</h4>
-                <date class="post--date" >{post.created.format('YYYY-MM-DD')}</date>
-                <div class="post--author" >author: {post.author}</div>
+            <div className="post" key={id}>
+                <h3 className="post--title" >- {post.title} -</h3>
+                <h4 className="post--subtitle" >{post.subtitle}</h4>
+                <div className="post--date" >created: {formattedDate}</div>
+                <div className="post--author" >by: {post.author}</div>
             </div>
         )
     })
 
     return(
-        <main class="container">
+        <main className="container">
             <p>
                 Welcome to this blog. Here, you can find an overview of all posts, that have been posted.
             </p>
-            <div class="overview"> {posts}</div>
+            <hr />
+            <div className="overview">{posts}</div>
         </main>
     );
 }

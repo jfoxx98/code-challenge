@@ -1,17 +1,23 @@
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 200;
+}
+
 .App {
   text-align: center;
   font-family: 'Nunito', sans-serif;
   font-size: 1.5em;
+  color: white;
+  background-color: #282828;
 }
 
 .header {
-  background-color: #2a2e36;
+  background-color: #b7b7b7;
   height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-size: 36px;
-  color: white;
+  color: #000000;
 }
 
 .container{
@@ -25,6 +31,7 @@
 }
 
 .post {
+  background-color: #5c5c5c;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,17 +39,20 @@
   height: 200px;
   margin: 40px;
   border-radius: 5px;
-  -webkit-box-shadow: 5px 5px 10px 0px rgb(80, 87, 102);
-  -moz-box-shadow: 5px 5px 10px 0px rgba(80, 87, 102);
-  box-shadow: 5px 5px 10px 0px rgba(80, 87, 102);
+  -webkit-box-shadow: 5px 5px 10px 0px rgb(0, 0, 0);
+  -moz-box-shadow: 5px 5px 10px 0px rgb(0, 0, 0);
+  box-shadow: 5px 5px 10px 0px rgb(0, 0, 0);
   transition: 1s;
 }
 
 .post:hover {
-  background-color: #363636;
-  color: white;
+  background-color: #494848;
+  translate:  -5px -5px;
+  -webkit-box-shadow: 10px 10px 20px 0px rgb(0, 0, 0);
+  -moz-box-shadow: 10px 10px 20px 0px rgb(0, 0, 0);
+  box-shadow: 10px 10px 20px 0px rgb(0, 0, 0);
   transition: 1s;
-  box-shadow: none;
+
 }
 
 .post--title {
@@ -50,7 +60,7 @@
 }
 
 .post--date {
-  
+  font-size: smaller;
 }
 
 .post--author {
