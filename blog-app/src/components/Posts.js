@@ -41,7 +41,7 @@ function Posts() {
                 Welcome to this blog. Here, you can find an overview of all posts, that have been posted.
             </p>
             <hr />
-            <div className="overview">{posts}</div>
+            {posts.length > 0? <div className="overview">{posts}</div> : <h3>No posts found!</h3>}
         </main>
     );
 }
