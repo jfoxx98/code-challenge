@@ -11,6 +11,11 @@ import {
 
 function App() {
 
+  /**
+   * Entry-point of app is the overview of all posts. Therefore the path of Posts-Component is "/".
+   * 
+   * "/:id" as dynamic segment to show detailpage of a specific blogpost in Post-Component
+   */
   return (
     <BrowserRouter>
       <div className="App">

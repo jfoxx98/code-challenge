@@ -6,6 +6,7 @@ function Posts() {
 
     const [allPosts, getAllPosts] = useState([])
 
+    /* API-url from server to get all blogposts available */
     const API = 'http://localhost:3001/rest/blogposts';
 
     function fetchPosts() {
@@ -20,14 +21,17 @@ function Posts() {
       fetchPosts()
     }, [])
 
+    /* "posts" renders all blogposts inside component */
     const posts = allPosts.map((post) => {
 
-            const extractedDate = post.created.substring(0, 10);
-            const dateArray = extractedDate.split('-');
-            const formattedDate = dateArray[2] + '.' + dateArray[1] + '.' + dateArray[0]
+        /* format creation-date of blogpost */
+        const extractedDate = post.created.substring(0, 10);
+        const dateArray = extractedDate.split('-');
+        const formattedDate = dateArray[2] + '.' + dateArray[1] + '.' + dateArray[0]
 
         return(
                 <div className="posts--list--item" key={post.id}>
+                    {/* link to post-component */}
                     <Link className="posts--list--item--link" to={`/${post.id}`}>
                         <h3 className="posts--list--item--title" >- {post.title} -</h3>
                         <h4 className="posts--list--item--subtitle" >{post.subtitle}</h4>

@@ -10,6 +10,12 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #282828;
 }
 
+@media screen and (max-width: 1024px) {
+  .App {
+    font-size: 1em;
+  }
+}
+
 .nav {
   background-color: #b7b7b7;
   display: flex;
@@ -27,7 +33,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-items {
   text-decoration: none;
-  font-size: 14pt;
   margin: 10px;
   color:rgb(0, 0, 0);
 }
@@ -101,6 +106,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: small;
   padding: 20px;
   line-height: 20pt;
+  text-align: left;
 }
 
 @media screen and (max-width: 1024px) {
@@ -151,4 +157,19 @@ h1, h2, h3, h4, h5, h6 {
     width: 50px;
     height: 25px;
   }
+}
+
+.about--text {
+  text-align: left;
+  line-height: 20pt;
+  padding: 0 20px 0 20px;
+}
+
+.about--list {
+  display: table;
+}
+
+.about--list--item {
+  margin-top: 10px;
+  text-align: left;
 }

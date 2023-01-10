@@ -7,6 +7,7 @@ function Post() {
 
     const [post, getPost] = useState({});
 
+    /* API-url from server to get specific blogpost by id */
     const API = `http://localhost:3001/rest/blogpost/${id}`;
 
     function fetchPost() {
@@ -31,6 +32,7 @@ function Post() {
                 <img className="post--detail--content--image" src={post.image} alt="blogpost"/>
                 <p className="post--detail--content--text">{post.content}</p>
               </div>
+              {/* link back to Posts-component */}
               <Link className="post--detail--link" to="/"><button className="button">BACK</button></Link>
             </div>
         </div>
