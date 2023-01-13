@@ -20,18 +20,18 @@ function About() {
             <h3>Developement</h3>
             <p className="about--text">
                 I used Git as my versioning tool. 
-                Although I'm working on my own on this project It's a good practice to use versioning to be able to see commits and be able to understand the lifecycle of the app. 
-                If i would have worked in a team I would have used branching but since theres no need for working simultaneously on this project I didn't see the benefits.
+                Although I'm working on my own on this project, It's a good practice to use versioning to be able to see commits and changes made to the app. 
+                If i would have worked in a team I would have used branching but since theres no need for working simultaneously on this project, I didn't see the benefits.
                 <br />
                 For the app itself, besides react and react-dom as basic packages, I used react-router-dom as a way to deal with different pages and routes.
             </p>
             <h3>Things to add</h3>
             <p className="about--text">
-                Since time and my skills made me go some shortcuts, there are definitly things to implement furthermore. Above you'll find a list of possible improvements to the app and code:
+                Since time and my skills restricted me in some ways, there are definitly things to improve furthermore. Below you'll find a list of possible improvements to the app and code:
                 <ul className="about--list">
                     <li className="about--list--item">
-                        <b>Testing:</b> Theres already Jest testing implemented as a package. Jest testing could be used for testing the components of this react app. 
-                        It has great features and is not super complicated. Especially on small apps as such. 
+                        <b>Testing:</b> There's already Jest testing implemented as a package. Jest testing could be used for testing the components of this react app. 
+                        It has great features and is not super complicated. Especially on small apps as this one. 
                         Nonetheless I haven't done Jest testing so far, so it would require additional time to teach me how to use it.
                     </li>
                     <li className="about--list--item">
