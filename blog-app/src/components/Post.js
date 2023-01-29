@@ -20,7 +20,7 @@ function Post() {
     
     useEffect(() => {
       fetchPost()
-    },)
+    },[])
 
     return(
         <div className="container">
