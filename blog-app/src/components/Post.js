@@ -29,7 +29,7 @@ function Post() {
               <h4 className="post--detail--subtitle" >{post.subtitle}</h4>
               <div className="post--detail--author" >by: {post.author}</div>
               <div className="post--detail--content">
-                <img className="post--detail--content--image" src={post.image} alt="blogpost"/>
+                <img className="post--detail--content--image" src={post.image} alt="The visualization of the blogpost."/>
                 <p className="post--detail--content--text">{post.content}</p>
               </div>
               {/* link back to Posts-component */}

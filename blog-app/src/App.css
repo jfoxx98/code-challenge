@@ -47,7 +47,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar--items--active {
   text-decoration: none;
-  margin: 12px;
   font-weight: 600;
   color:rgb(0, 0, 0);
 }
@@ -111,14 +110,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .post--detail--content--image {
   object-fit: contain;
-  max-width: 400px;
-  width: 50%;
-}
-
-.imagePlaceholder {
-  background-color: #000000;
-  max-width: 400px;
-  width: 50%;
+  max-width: 500px;
+  flex:40%;
 }
 
 .post--detail--content--text {
@@ -126,6 +119,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px;
   line-height: 20pt;
   text-align: left;
+  flex: 60%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -134,6 +128,11 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  .post--detail--content--image {
+    width: 50%;
+    height: auto;
+  }  
 
   .post--detail--content--text {
     font-size: 0.9em;
