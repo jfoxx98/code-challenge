@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 
 function Header() {
     return(
@@ -6,10 +6,20 @@ function Header() {
             <h3>Code-Challenge: Blog</h3>
             <ul className="navbar">
                 <li>
-                    <Link className="navbar-items" to="/">Home</Link>
+                    <NavLink
+                        to="/"
+                        className={({ isActive }) => isActive ? "navbar--items--active" : "navbar--items"}
+                    >
+                        Home
+                    </NavLink>
                 </li>
                 <li>
-                    <Link className="navbar-items" to="/about">About</Link>
+                    <NavLink 
+                    to="/about"
+                    className={({ isActive }) => isActive ? "navbar--items--active" : "navbar--items"}
+                    >
+                        About
+                    </NavLink>
                 </li>
             </ul>
       </header>
