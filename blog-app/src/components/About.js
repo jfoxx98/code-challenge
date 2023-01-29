@@ -7,16 +7,18 @@ function About() {
                 This project was meant to show farbenmeer and myself, where I'm standing in terms of skills and abilities at the moment.
             </p>
             <h3> App structure</h3>
-            <p className="about--text">
-                I've used create-react-app to build an app, which uses the server provided to fetch blogposts and show them as a simple blog-app.
-                The structure is simple. 
+            <div className="about--text">
+                <p>
+                    I've used create-react-app to build an app, which uses the server provided to fetch blogposts and show them as a simple blog-app.
+                    The structure is simple. 
+                </p>
                 <ul className="about--list">
                     <li className="about--list--item">Overview page as homepage: Posts-component</li>
                     <li className="about--list--item">Detailed look at each post: Post-component</li>
                     <li className="about--list--item">Navigation-bar to show links: Header</li>
                     <li className="about--list--item">About-page</li>
                 </ul>
-            </p>
+            </div>
             <h3>Developement</h3>
             <p className="about--text">
                 I used Git as my versioning tool. 
@@ -26,8 +28,10 @@ function About() {
                 For the app itself, besides react and react-dom as basic packages, I used react-router-dom as a way to deal with different pages and routes.
             </p>
             <h3>Things to add</h3>
-            <p className="about--text">
-                Since time and my skills restricted me in some ways, there are definitly things to improve furthermore. Below you'll find a list of possible improvements to the app and code:
+            <div className="about--text">
+                <p>
+                    Since time and my skills restricted me in some ways, there are definitly things to improve furthermore. Below you'll find a list of possible improvements to the app and code:
+                </p>
                 <ul className="about--list">
                     <li className="about--list--item">
                         <b>Testing:</b> There's already Jest testing implemented as a package. Jest testing could be used for testing the components of this react app. 
@@ -43,7 +47,7 @@ function About() {
                         I haven't implemented any legal notice and a cookie pop-up as it is required when publishing the app and using cookies.
                     </li>
                 </ul>
-            </p>
+            </div>
         </div>
     )
 }
